@@ -28,6 +28,9 @@ namespace Perceptron
                 int index = (int)(rand.getRandomDouble() * TrainSet.Count);
 
                 TrainingSet t = TrainSet[index];
+
+                setInputs(t.getInputs());
+                adjustWeight(t.getOutputs());
             }
         }
 

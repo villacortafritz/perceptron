@@ -185,6 +185,7 @@ namespace Perceptron
                         sampleAccounts++;
                     }
 
+                    lblOpenedFile.Text = Constants.OPEN_FILE + openFileDialog1.SafeFileName;
                     lblSamplesAdded.Text = Constants.SAMPLES_ADDED + sampleAccounts;
                 }
                 else
